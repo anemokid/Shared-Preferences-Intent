@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="c4q.nyc.idk">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             Android Studio automatically implicitally declares an Activity in the Android Manifest
+             - but if the activities not working it's because the second activity doesn't exist in the manifest yet
+             - sometimes you have to explicitally state the activity !!! Always remember to check
+        -->
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".FunnyThirdActivity" />
+        <activity android:name=".SadThirdActivity"></activity>
+    </application>
+
+</manifest>
